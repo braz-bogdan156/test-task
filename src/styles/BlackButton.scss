@@ -1,0 +1,7 @@
+@import 'mixins';
+
+
+
+.section__black-button {
+    @include black-button($button-color: black, $text-color: white, $font-size: 20px);
+  }

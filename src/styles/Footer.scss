@@ -1,0 +1,171 @@
+@import "Paragraph.scss";
+@import "BigTitle.scss";
+@import "ArrowButton.scss";
+@import "LogoType.scss";
+@import "SocialButtons.scss";
+
+$black-color: #000000;
+$white-color: #ffffff;
+$red-color: red;
+
+.footer__container {
+  margin-top: 48px;
+}
+
+.footer__wrapper {
+  position: relative;
+  background-color: $black-color;
+  border-radius: 72px 72px 0 0;
+}
+
+.footer__titles {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.footer__info {
+  display: flex;
+  justify-content: space-around;
+}
+
+.footer__another-logo-text {
+  @extend .logo__text;
+  color: $white-color !important;
+}
+
+.footer__paragraphes-paragraph {
+  @extend .section__paragraph;
+  color: $white-color;
+}
+
+.footer__advice-paragraph {
+  @extend .footer__paragraphes-paragraph;
+  padding-top: 48px;
+}
+
+.footer__form-paragraph {
+  @extend .section__paragraph;
+  color: $white-color;
+}
+
+.footer__personal-info-paragraph {
+  @extend .footer__form-paragraph;
+  font-size: 14px;
+  line-height: 20.23px;
+}
+
+.footer__info-creator-paragraph {
+  @extend .footer__form-paragraph;
+}
+
+.footer__title {
+  @extend .section__big-title;
+  color: $white-color;
+  font-size: 36px;
+  line-height: 52.02px;
+  padding-top: 48px;
+  padding-bottom: 10px;
+}
+
+.footer__list-item-icon {
+  width: 24px;
+  height: 24px;
+}
+
+.footer__list-item-text {
+  @extend .footer__info-creator-paragraph;
+}
+
+.footer__form-input::placeholder {
+  @extend .footer__info-creator-paragraph;
+}
+
+.footer__form-input {
+  border: none;
+  outline: none;
+  background-color: $black-color;
+  @extend .footer__info-creator-paragraph;
+}
+
+.footer__form-mail-container {
+  width: fit-content;
+  display: flex;
+  gap: 184px;
+  border: 2px solid $white-color;
+  border-radius: 34.5px;
+  padding: 20px 0px 20px 24px;
+}
+
+.footer__button--another-button {
+  @extend .section__button--arrow-button;
+  background-color: $white-color !important;
+}
+.footer__button--another-button:hover{
+  background-color: $red-color !important;
+}
+
+.button--another-button__text {
+  @extend .button--arrow-button__text;
+  color: $black-color !important;
+}
+
+.button--another-button__icon {
+  @extend .button--arrow-button__icon;
+  background-color: $black-color;
+}
+.footer__list-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding-top: 24px;
+}
+
+.footer__logo {
+  padding-top: 48px;
+}
+
+.footer__logo-circle {
+  margin-top: 48px;
+}
+
+.footer__paragraphes {
+  padding-top: 25px;
+}
+
+.footer__mail-info {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.footer__item-button {
+  @extend .icon-button;
+  background-color: $white-color !important;
+}
+
+
+.footer__item-icon {
+  @extend .icon__button__image !optional;
+  background-color: $black-color;
+}
+
+.footer__buttons {
+  padding-top: 6px;
+}
+
+.footer__down-content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer__info-creator {
+  padding-left: 225px;
+  padding-top: 51px;
+}
+
+.footer__privacy {
+  display: flex;
+  gap: 32px;
+  padding-right: 130px;
+  padding-top: 51px;
+}

@@ -1,0 +1,61 @@
+@import 'Paragraph.scss';
+$black-color: #000000;
+
+.testimonials__paragraph-another-text{
+    @extend .section__paragraph;
+    line-height: 20px ;
+}
+
+.testimonials__avtor-info{
+    display: flex;
+    gap: 18px;
+}
+
+.testimonials__avtor-info-icon{
+    width: 48px;
+    height: 48px;
+}
+
+
+
+
+.testimonials__title-another-text{
+    @extend .testimonials__paragraph-another-text;
+    font-weight: 200;
+    font-style: italic;
+    
+}
+
+.testimonials__container{
+    position: relative;
+    margin-top: 88px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.testimonials__down-button{
+    position: absolute;
+    bottom: -40px;
+}
+
+.testimonials__form-container{
+    border: 2px solid $black-color;
+    border-radius: 72px;
+}
+
+.testimonials__form-wrapper{
+  padding: 50px;  
+}
+
+.testimonials__users-list{
+    display: flex;
+}
+.testimonials__list-item{
+    display: flex;
+}
+
+.testimonials__list-item-icon{
+    padding-bottom: 128px;
+   
+}

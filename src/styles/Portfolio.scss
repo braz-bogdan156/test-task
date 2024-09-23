@@ -1,0 +1,112 @@
+$background-color: #E2E6EE;
+$black-color: #000000;
+$light_green-color: #BAFFE6;
+$purple-color: #FEC3FF;
+$blue-color:  #A4E4FF;
+$light_red-color: #FFECF3;
+$white-color: #FFFFFF;
+
+
+.portfolio__container{
+    
+    position: relative;
+    margin-top: 88px;
+   
+}
+.portfolio__downbutton{
+    position: absolute;
+    bottom: -40px;
+    
+  }
+  
+.portfolio__wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: $background-color;
+    border-radius: 72px;
+    padding: 38px 294px 64px 294px;
+}
+
+.portfolio__text-info{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.portfolio__buttons{
+    margin: 38px 0;
+}
+
+.portfolio__list{
+    display: flex;
+    gap: 16px;
+}
+
+.portfolio__button{
+    padding: 8px 22px;
+    border: 1px solid $black-color;
+    border-radius: 26px;
+    transition: background-color 1s, color 1s, transform 1s ;
+    
+}
+.portfolio__button:focus{
+    background-color: $black-color;
+    color: $white-color;
+    transform: scale(1.2);
+}
+
+.portfolio__button.active{
+    background-color: $black-color;
+    color: $white-color;
+    transition: background-color 1s, color 1s, transform 1s ;
+}
+
+.portfolio__button.active:hover{
+    background-color: $white-color;
+    color: $black-color;
+    transform: scale(1.2);
+}
+
+.portfolio__group-elements{
+    padding-right: 650px;
+}
+
+.portfolio__images-list{
+    display: flex;
+    gap: 20px;
+}
+
+.portfolio__images-item{
+    border: 2px solid $black-color;
+    border-radius: 32px;
+    padding: 37px;
+}
+
+.portfolio__images-item__image{
+    width: 244px;
+    height: 244px;
+}
+
+.portfolio__images-item--1, .portfolio__images-item--5{
+    background-color: $purple-color;
+}
+.portfolio__images-item--2, .portfolio__images-item--6{
+    background-color: $blue-color;
+}
+.portfolio__images-item--3, .portfolio__images-item--7{
+    background-color: $light_green-color;
+}
+.portfolio__images-item--4, .portfolio__images-item--8{
+    background-color: $light_red-color;
+}
+
+.portfolio__images-list--2{
+    margin-top: 20px;
+}
+
+.portfolio__another-button{
+    left: 50%;
+    transform: translateX(-50%);
+}
+

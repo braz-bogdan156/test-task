@@ -1,0 +1,5 @@
+@import 'mixins';
+
+.section__big-title {
+  @include big-title("Jost", 48px, 700, 69.36px);
+}

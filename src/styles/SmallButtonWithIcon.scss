@@ -1,0 +1,7 @@
+@import 'mixins';
+
+
+
+.section__button-icon {
+    @include small-button--with-icon($button-color: black, $text-color: white, $font-size: 14px);
+  }

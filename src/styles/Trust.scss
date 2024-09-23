@@ -1,0 +1,38 @@
+$black-color : #000000;
+
+.trust__container{
+    position: relative;
+    margin-top: 88px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 48px;
+}
+
+.trust__down-button{
+    position: absolute;
+    
+}
+
+.trust__cards-list{
+    display: flex;
+    gap: 20px;
+}
+
+.trust__list-item{
+    border: 2px solid $black-color;
+    border-radius: 32px;
+    padding: 70px 75px 78px 69px;
+}
+
+.list-item__text{
+font-family: "Jost", sans-serif;
+font-size: 48px;
+font-style: italic;
+font-weight: 200;
+line-height: 69.36px;
+}
+
+.trust__another-button{
+    bottom: -120px;
+}

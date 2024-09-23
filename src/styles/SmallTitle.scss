@@ -1,0 +1,6 @@
+
+    @import 'mixins';
+
+    .section__small-title {
+      @include small-title("Jost", 20px, 400, 28.9px);
+    }

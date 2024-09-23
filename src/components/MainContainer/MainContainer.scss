@@ -1,0 +1,238 @@
+$grey_color: #4C5770;
+$black-color: black;
+$light_red-color: #FFECF3;
+$white-color:  #FFFFFF;
+$purple-color: #FEC3FF;
+$pink-color:  #FFC3D2;
+$light_blue-color:  #A4E4FF;
+$light_green-color:  #BAFFE6;
+$blue-color:  #09AFF4;
+
+
+.main__container{
+	display: flex;
+	width: 100%;
+	overflow: hidden;
+	@media (min-width: 320px) and (max-width: 767px) {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.images__container{
+    display: flex;
+		flex-direction: row;
+		gap: 8px;
+
+    @media(min-width: 767px) {
+			flex-direction: column;
+			gap: 18px;
+		}
+		.images__item img {
+			width: fit-content;
+		}
+		
+		.images__item:first-child,
+		.images__item:last-child{
+			width: fit-content;
+			padding: 4px 19px 4px 19px;
+			border: 2px $black-color solid;
+			border-radius: 28px;
+			@media(min-width: 767px){
+				padding: 20px 42px 20px 42px;
+			}
+		}
+		.images__item:first-child{
+			background-color: $grey_color;
+		}
+		
+		.images__item:nth-last-child(2){
+			width: fit-content;
+			background-color: $light_red-color;
+			padding: 4px 19px 4px 19px;
+			border: 2px $black-color solid;
+			border-radius: 68px;
+			@media (min-width: 767px) {
+				padding: 20px 42px 20px 42px;
+			}
+		}
+		
+		.images__item:last-child {
+			background-color: $white-color;
+		}
+
+		.images__img{
+			width: 82px;
+			height: 82px;
+			@media (min-width: 767px) {
+				width: 96px;
+				height: 96px;
+			}
+		}
+
+	}
+
+	.main__solutions {
+		margin-bottom: 24px;
+		@media (min-width: 767px) {
+			margin-left: 60px;
+		}
+
+ 
+	}
+    
+}
+
+
+
+
+
+
+.high-titles{
+    display: flex;
+    flex-direction: column;
+   
+    white-space: nowrap;
+}
+
+.buttons__container{
+    display: flex;
+   
+    gap: 12px;
+    @media (min-width: 320px) and (max-width: 767px) {
+        margin-top: 18px;
+      }
+    
+}
+
+.icon-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background-color: $black-color;
+    border-radius: 26px;
+    
+}
+
+.icon-button__image {
+    width: 24px;
+    height: 24px;
+}
+
+.it-solutions{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    padding-top: 18px;
+}
+
+.main__social-media{
+	display: flex;
+	flex-direction: column;
+	gap: 12px;
+	@media (min-width: 767px) {
+		gap: 18px;
+		margin-left: 60px;
+	} 
+} 
+
+.main__social-media__list{
+	display: flex;
+	gap: 12px;
+	@media (min-width: 767px) {
+		gap: 18px;
+	}	
+    
+}
+.main__social-media__item__text{
+  flex-wrap: nowrap;
+}
+
+
+.main__social-media__item--1,
+.main__social-media__item--3,
+.main__social-media__item--4,
+.main__social-media__item--5,
+.main__social-media__item--6,
+.main__social-media__item--8,
+.main__social-media__item--10,
+.main__social-media__item--12{
+    
+	width: fit-content;
+	padding: 20px 42px;
+	border: 2px $black-color solid;
+	border-radius: 12px;
+	gap: 12px;
+	@media (min-width: 767px) {
+		gap: 28px;
+	}		
+    
+}
+
+.main__social-media__item--1{
+    background-color: $light_blue-color;
+}
+.main__social-media__item--3{
+    background-color: $pink-color;
+}
+.main__social-media__item--4{
+    background-color: $grey_color;
+}
+.main__social-media__item--5{
+    background-color: $purple-color;
+}
+.main__social-media__item--6{
+    background-color: $grey_color;
+}
+.main__social-media__item--8{
+    background-color: $blue-color;
+}
+.main__social-media__item--10{
+    background-color: $light_blue-color;
+}
+.main__social-media__item--12{
+    background-color: $white-color;
+}
+.main__social-media__item__image{
+    width: 96px;
+    height: 96px;
+}
+.main__social-media__item--2{
+    background-color: $light_green-color;
+}
+.main__social-media__item--7{
+    background-color: $light_red-color;
+}
+.main__social-media__item--9{
+    background-color: $pink-color;
+}
+.main__social-media__item--2,
+.main__social-media__item--7,
+.main__social-media__item--9 {
+    display: flex;
+    gap: 21px;
+    width: fit-content;
+    padding: 20px 44px 20px 42px;
+    border: 2px $black-color solid;
+    border-radius: 68px;
+    
+}
+.main__social-media__item__text{
+    display: flex;
+    align-items: center;
+    font-family:  "Jost", sans-serif;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 57.8px;
+    white-space: nowrap;
+    
+}
+.main__social-media__item--11{
+    width: fit-content;
+    background-color: $purple-color;
+    padding: 20px 42px 20px 42px;
+    border: 2px $black-color solid;
+    border-radius: 68px;
+}
+

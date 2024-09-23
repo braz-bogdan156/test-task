@@ -1,0 +1,5 @@
+@import 'mixins';
+
+.section__bold-paragraph {
+  @include bold-paragraph("Jost", 20px, 500, 28.9px);
+}

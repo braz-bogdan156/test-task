@@ -1,0 +1,239 @@
+$pink-color: pink;
+$red-color: red;
+
+@mixin logo($circle-color, $square-color, $text-color) {
+  .logo {
+    display: flex;
+    align-items: center;
+    position: relative;
+  }
+  
+  .logo__circle {
+    width: 16px;
+    height: 16px;
+    background-color: $circle-color;
+    border-radius: 50%;
+    position: absolute;
+    top: 23px;
+    left: 5px;
+  }
+  
+  .logo__zaokrkvadrat {
+    width: 16px;
+    height: 16px;
+    background-color: $square-color;
+    border-radius: 25%;
+  }
+  
+  .logo__text {
+    font-family: "Jost", sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    margin-left: 6px;
+    padding: 8px 0 5px 0;
+    color: $text-color;
+  }
+}
+
+
+@mixin social-buttons($bg-color, $icon-size: 24px) {
+  .buttons__container {
+    display: flex;
+    gap: 12px;
+  }
+
+  .icon-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background-color: $bg-color;
+    border-radius: 26px;
+  }
+
+  .icon-button__image {
+    width: $icon-size;
+    height: $icon-size;
+  }
+}
+
+@mixin big-title($font-family, $font-size, $font-weight, $line-height) {
+  font-family: $font-family;
+  font-size: $font-size;
+  font-weight: $font-weight;
+  line-height: $line-height;
+}
+
+@mixin small-title($font-family, $font-size, $font-weight, $line-height) {
+  font-family: $font-family;
+  font-size: $font-size;
+  font-weight: $font-weight;
+  line-height: $line-height;
+}
+
+@mixin underline-title ($font-family, $font-size, $font-style, $font-weight, $line-height, $text-decoration, $none, $text-underline-offset) {
+  font-family: $font-family;
+  font-size: $font-size;
+  font-style: $font-style;
+  font-weight: $font-weight;
+  line-height: $line-height;
+  text-decoration: $text-decoration;
+  text-decoration-skip-ink: $none;
+  text-underline-offset: $text-underline-offset;
+}
+
+@mixin paragraph ($font-family, $font-size, $font-weight, $line-height) {
+  font-family: $font-family;
+  font-size: $font-size;
+  font-weight: $font-weight;
+  line-height: $line-height;
+}
+
+@mixin article-title ($font-family, $font-size, $font-weight, $line-height) {
+  font-family: $font-family;
+  font-size: $font-size;
+  font-weight: $font-weight;
+  line-height: $line-height;
+}
+
+@mixin bold-paragraph($font-family, $font-size, $font-weight, $line-height) {
+  font-family: $font-family;
+  font-size: $font-size;
+  font-weight: $font-weight;
+  line-height: $line-height;
+}
+
+@mixin big-number($font-family, $font-size, $font-weight, $line-height) {
+  font-family: $font-family;
+  font-size: $font-size;
+  font-weight: $font-weight;
+  line-height: $line-height;
+}
+
+@mixin bigger-number($font-family, $font-size, $font-weight, $line-height) {
+  font-family: $font-family;
+  font-size: $font-size;
+  font-weight: $font-weight;
+  line-height: $line-height;
+}
+
+@mixin horizontal-line($width, $height, $border, $deg ) {
+  width: $width;
+  height: $height;
+  border: $border;
+  rotate: $deg;
+}
+
+@mixin vertical-line($width, $height, $border, $deg ) {
+  width: $width;
+  height: $height;
+  border: $border;
+  rotate: $deg;
+}
+
+@mixin small-button--with-icon($button-color: black, $text-color: white, $font-size: 14px) {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 4px 14px;
+  background-color: $button-color;
+  border-radius: 26px;
+  transition: transform 1.1s ease-in;
+
+  .small-button--text {
+      font-family: "Jost", sans-serif;
+      font-size: $font-size;
+      font-weight: 500;
+      line-height: 20.23px;
+      color: $text-color;
+      
+  }
+
+  &:hover .small-button--text{
+    color: $pink-color
+  }
+
+  .small-button--icon {
+      width: 16px;
+      height: 16px;
+      
+  }
+  
+}
+
+@mixin black-button($button-color: black, $text-color: white, $font-size: 20px) {
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    padding: 8px 22px;
+    background-color: $button-color;
+    border-radius: 26px;
+
+  .black-button--text {
+    font-family: "Jost", sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 28.9px;
+    color: $text-color;
+    transition: 0.5ms ease-in-out;
+  }
+  &:hover .black-button--text{
+      
+    color: #A4E4FF;
+    
+  }
+
+  }
+
+  @mixin arrow-button($bg-color, $text-color) {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    width: fit-content;
+    padding: 8px 22px;
+    background-color: $bg-color;
+    border-radius: 26px;
+  
+    .button--arrow-button__text {
+      font-family: "Jost", sans-serif;
+      font-size: 20px;
+      font-weight: 500;
+      line-height: 28.9px;
+      color: $text-color;
+      transition: 0.5ms ease;
+    }
+    &:hover {
+      
+      background-color: $red-color ;
+    }
+  
+    .button--arrow-button__icon {
+      width: 24px;
+      height: 24px;
+    }
+  }
+
+  @mixin down-button($bg-color, $icon-width, $icon-height, $icon-margin) {
+    width: 78px;
+    height: 78px;
+    border-radius: 50%;
+    padding: 8px;
+    background-color: $bg-color;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;    
+    bottom: -40px;    
+    transition: transform 1s;
+
+    &:hover {
+      transform: scale(1.2); 
+    }
+  
+    .button--down-button__icon {
+      width: $icon-width;
+      height: $icon-height;
+      margin: $icon-margin;
+    }
+  }

@@ -1,0 +1,10 @@
+@import 'mixins';
+$black-color: black;
+
+
+.section__button--down-button {
+    @include down-button($black-color, 26px, 28px, 17px 18px);
+    
+  }
+
+  

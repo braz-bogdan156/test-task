@@ -1,0 +1,6 @@
+
+    @import 'mixins';
+
+    .section__paragraph {
+      @include paragraph("Jost", 20px, 400, 28.9px);
+    }

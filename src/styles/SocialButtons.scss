@@ -1,0 +1,7 @@
+@import 'mixins';
+$black-color: black;
+$white-color:white;
+
+.section__social-buttons {
+  @include social-buttons($black-color);
+}

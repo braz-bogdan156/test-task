@@ -1,0 +1,6 @@
+
+    @import 'mixins';
+
+    .section__underline-title {
+      @include underline-title("Jost", 48px, italic, 200, 69.36px, underline, none, 7px);
+    }

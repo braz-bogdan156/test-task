@@ -1,0 +1,11 @@
+.section__article-title{
+    font-family: "Jost", sans-serif;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 52.02px;
+    }
+    @import 'mixins';
+
+    .section__article-title {
+      @include article-title("Jost", 36px, 700, 52.02px);
+    }

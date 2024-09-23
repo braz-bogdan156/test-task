@@ -1,0 +1,5 @@
+@import 'mixins';
+
+.section__horizontal-line {
+  @include horizontal-line(270px, 1px, 2px solid black, 0deg);
+}

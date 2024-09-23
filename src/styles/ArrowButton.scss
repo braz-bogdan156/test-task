@@ -1,0 +1,8 @@
+@import 'mixins';
+$black-color: black;
+$white-color: white;
+
+
+.section__button--arrow-button {
+    @include arrow-button($black-color, $white-color);
+  }

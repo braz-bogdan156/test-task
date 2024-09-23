@@ -1,0 +1,5 @@
+@import 'mixins';
+
+.section__vertical-line {
+  @include vertical-line(211px, 1px, 2px solid #000000, -90deg);
+}

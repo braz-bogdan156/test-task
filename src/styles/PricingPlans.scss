@@ -1,0 +1,173 @@
+
+@import 'Paragraph.scss';
+@import 'BlackButton.scss';
+
+
+$grey-color:  #E2E6EE;
+$black-color: black;
+$white-color:  #FFFFFF;
+$light_blue-color:  #A4E4FF;
+$yellow-color: yellow;
+
+.plans__container{
+    position: relative;
+    margin-top: 174px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.plans__wrapper{
+    width: 80%;
+    position: relative;
+    background-color: $grey-color;
+    border-radius: 72px;
+}
+
+.plans__features-icon{
+    width: 20px;
+    height: 20px;
+}
+
+.plans__features{
+    display: flex;
+    gap: 20px;
+}
+.button--best-offer {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    width: fit-content;
+    padding: 8px 22px;
+    background-color: $black-color;
+    border-radius: 26px;
+}
+
+.button--best-offer-button__text{
+    font-family: "Jost", sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 28.9px;
+    color: $white-color;
+    
+}
+
+.button--best-offer-button__icon{
+    width: 24px;
+    height: 24px;
+    transition: 1s ease-out;
+}
+.button--best-offer-button__icon:hover{
+    background-color: $yellow-color;
+}
+
+.plans__group-info{
+    display: flex;
+    align-items: center;
+    gap: 73px;
+    padding-top: 28px;
+    padding-left: 28px;
+    padding-right: 18px;
+}
+
+
+.plans__features--another-icon{
+    @extend .plans__features-icon;
+    background-color: $light_blue-color;
+}
+
+.plans__features{
+    display: flex;
+    margin: 38px 135px 55px 135px;
+    
+}
+.plans__features-card{
+    position: relative;
+    flex: 1;
+    min-width: 319.65px;
+    border: 2px solid $black-color;
+    border-radius: 32px;
+    
+}
+.plans__heading{
+    padding-top: 36px ;
+    padding-left: 28px;
+    padding-right: 44px;
+    padding-bottom: 8px;
+}
+
+.plans__big-heading{
+    padding-left: 24px;
+}
+
+.plans__group-elements{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.plans__group-button{
+    margin-right: 132px;
+}
+
+.plans__info{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    padding-left: 135px;
+    padding-top: 38px
+}
+
+.plans__horizontal-line{
+    
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.plans__features--third-card{
+    background-color: $light_blue-color;
+}
+
+.plans__features-title{
+    padding-left: 24px ;
+    padding-top: 14px;
+    padding-bottom: 14px;
+}
+
+.plans__black-button{
+    padding: 88.5px 24px;
+}
+.plans__down-button{
+    position: absolute;
+    top: 27.5px;
+}
+
+.plans__features-list-item{
+    display: flex;
+    gap: 15px;
+    padding-left: 21px;
+    padding-right: 38px
+}
+
+
+
+.plans__features-text{
+    @extend .section__paragraph;
+    line-height: 50px;
+}
+
+.plans__features-button{
+    margin: 24px 88.5px;
+}
+
+.plans__features--another-icon{
+    @extend .plans__features-icon;
+    background-color: $light_blue-color;
+}
+
+.plans__button--another-text{
+    @extend .black-button--text;
+    color: $light_blue-color !important;
+}

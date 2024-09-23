@@ -1,0 +1,6 @@
+$blue-color: #09AFF4;
+$purple-color:  #C07FF2;
+$black-color: black;
+
+@import "mixins";
+@include logo($blue-color, $purple-color, $black-color);

@@ -1,0 +1,5 @@
+@import 'mixins';
+
+.section__big-number {
+  @include big-number("Jost", 48px, 700, 69.36px);
+}

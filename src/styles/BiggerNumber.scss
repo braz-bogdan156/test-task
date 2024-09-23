@@ -1,0 +1,5 @@
+@import 'mixins';
+
+    .section__bigger-number {
+      @include paragraph("Jost", 64px, 800, 92.48px);
+    }
